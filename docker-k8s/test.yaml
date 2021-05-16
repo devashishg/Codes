@@ -1,0 +1,8 @@
+apiVersion: V1
+kind: Pod | 
+metadata: 
+  name: any_name
+spec:
+  containers:
+     - name: name
+       image: image_tag_name
