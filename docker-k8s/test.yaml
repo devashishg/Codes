@@ -1,9 +1,31 @@
-apiVersion: V1
-kind: Pod | 
-metadata: 
-  name: any_name
-spec:
-  containers:
-     - name: name
-       image: image_tag_name
-       imagePullPolicy: Never
+
+example1:
+  apiVersion: V1
+  kind: Pod
+  metadata: 
+    name: any_name
+  spec:
+    containers:
+       - name: name
+         image: image_tag_name
+         imagePullPolicy: Never
+
+example2:
+  apiVersion: V1
+  kind: Deployment
+  metadata: 
+    name: any_name
+  spec:
+    replicas: n
+    selector: 
+      matchLabels: 
+        app: app-name
+    template: 
+      metadata: 
+        labels: 
+          app: app-name
+      spec:
+        containers:
+          - name: name
+            image: image_tag_name
+            imagePullPolicy: Never
