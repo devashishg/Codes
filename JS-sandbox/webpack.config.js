@@ -29,3 +29,30 @@ module.exports = {
 		]
 	}
 };
+
+
+
+
+///------ babelrc
+/*
+{
+    "presets" : [ "@babel/preset-env"],
+    "plugins": [
+        [
+          "@babel/plugin-proposal-class-properties",
+          {
+            "loose": true
+          }
+        ]
+      ,
+        [
+          "transform-remove-console",
+          {
+            "exclude": [ "error", "warn"] 
+          }
+        ]
+      ]
+}
+
+
+*/
