@@ -1,0 +1,2 @@
+// history ignore
+HISTCONTROL=ignorespace
