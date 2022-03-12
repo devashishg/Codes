@@ -1,4 +1,4 @@
-
+// Gap theorem
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -23,12 +23,14 @@ class MergeSort
     
     public static void merge(int[] arr, int start, int mid, int end) {
     	int sizeArray = end - start +1;
+	// gap half of size of array- Mid
     	int gap = sizeArray/2;
     	while(gap>=1) {
             int point1 = start;
             int point2 = start+gap;
             while(point2<=end) {
                 if(arr[point1] > arr[point2]) {
+			// swap the two pointers and move ahead
                     swap(arr, point1, point2);
                 }
                 point1++;
